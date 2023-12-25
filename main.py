@@ -30,7 +30,7 @@ def receive_data():
     response = completion.choices[0].message.content
     return make_response(jsonify(response))
 
-if __name__ == '__main__':
+def create_app() :
     app.debug = True
     app.run()
     app.run(debug = True)
